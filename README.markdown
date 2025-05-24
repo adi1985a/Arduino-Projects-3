@@ -124,10 +124,14 @@ void updateLEDs() {
 
 ## 📃 License
 
-This project is open-source and available under the **MIT License**. See the `LICENSE` file for details.
+This project is licensed under the [MIT License](https://opensource.org/licenses/MIT).  
+See the `LICENSE` file for details.
 
-## 👨‍💻 Author
+---
 
-**Adrian Lesniak**
+## 👤 Author
+
+**Adrian Lesniak**  
+Embedded Systems & Arduino Developer
 
 > 💡 Designed for projects where internationalization, hardware control, and user interaction matter most.
