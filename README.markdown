@@ -1,6 +1,10 @@
-# Arduino LED Toggle with I2C LCD and Custom Polish Characters
+# 🔴🟡🟢 Arduino LED Toggle with I2C LCD and Polish Characters
 
-This Arduino project toggles three LEDs (Red, Yellow, Green) using a button. The current LED and its state (ON/OFF) are displayed on an I2C LCD using custom characters for Polish letters such as 'Ż', 'ó', and 'ł'.
+This Arduino project toggles three LEDs (Red, Yellow, Green) using a push button. It displays the active LED and its status (ON/OFF) on a 16x2 I2C LCD, including custom characters to correctly display Polish letters like **Ż**, **ó**, and **ł**.
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+[![Platform: Arduino](https://img.shields.io/badge/Platform-Arduino-00979D.svg)](https://www.arduino.cc/)
+[![Language: C++](https://img.shields.io/badge/Language-C++-lightgrey.svg)](https://isocpp.org/)
 
 ## 🧠 Overview
 
