@@ -1,51 +1,39 @@
-# 🔴🟡🟢 Arduino LED Toggle with I2C LCD and Polish Characters
+# Arduino LED Toggle with I2C LCD and Custom Polish Characters
 
-This Arduino project toggles three LEDs (Red, Yellow, Green) using a push button. It displays the active LED and its status (ON/OFF) on a 16x2 I2C LCD, including custom characters to correctly display Polish letters like **Ż**, **ó**, and **ł**.
-
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
-[![Platform: Arduino](https://img.shields.io/badge/Platform-Arduino-00979D.svg)](https://www.arduino.cc/)
-[![Language: C++](https://img.shields.io/badge/Language-C++-lightgrey.svg)](https://isocpp.org/)
-
----
+This Arduino project toggles three LEDs (Red, Yellow, Green) using a button. The current LED and its state (ON/OFF) are displayed on an I2C LCD using custom characters for Polish letters such as 'Ż', 'ó', and 'ł'.
 
 ## 🧠 Overview
 
 This project demonstrates:
 
 - Button-controlled toggling of three LEDs in sequence.
-- Displaying LED status (ON/OFF) on a 16x2 I2C LCD.
-- Custom LCD characters for Polish letters: **Ż**, **ó**, **ł**.
-- Basic debounce handling for reliable button input.
+- Displaying the current LED and its status (ON/OFF) on a 16x2 I2C LCD.
+- Use of custom characters for Polish language support on the LCD.
+- Basic debounce handling to ensure reliable button presses.
 
----
+## 🛠 Components Required
 
-## 🛠️ Components Required
-
-| Component            | Quantity |
-|----------------------|----------|
-| Arduino Uno/Nano     | 1        |
-| I2C 16x2 LCD Display | 1        |
-| Red LED              | 1        |
-| Yellow LED           | 1        |
-| Green LED            | 1        |
-| 220Ω Resistors       | 3        |
-| Push Button          | 1        |
-| Breadboard & Wires   | As needed |
-
----
+| Component             | Quantity |
+|-----------------------|----------|
+| Arduino (Uno/Nano)    | 1        |
+| I2C 16x2 LCD display  | 1        |
+| LEDs (Red, Yellow, Green) | 3    |
+| Resistors (220Ω)      | 3        |
+| Push Button           | 1        |
+| Breadboard + Wires    | as needed |
 
 ## 🔌 Wiring Guide
 
 ### LEDs and Button
 
-| Arduino Pin | Connected To              |
-|-------------|---------------------------|
-| D5          | Green LED (via resistor)  |
-| D6          | Red LED (via resistor)    |
-| D9          | Yellow LED (via resistor) |
-| D7          | Push Button (with pull-up)|
+| Arduino Pin | Connected To               |
+|-------------|----------------------------|
+| D5          | Green LED (via resistor)   |
+| D6          | Red LED (via resistor)     |
+| D9          | Yellow LED (via resistor)  |
+| D7          | Push Button (with pull-up) |
 
-### I2C LCD (Default Address: `0x27`)
+### I2C LCD (Default I2C address: `0x27`)
 
 | LCD Pin | Arduino Pin |
 |---------|-------------|
@@ -54,30 +42,18 @@ This project demonstrates:
 | SDA     | A4 (Uno)    |
 | SCL     | A5 (Uno)    |
 
-💡 Use an [I2C scanner](https://playground.arduino.cc/Main/I2cScanner/) to detect your LCD address if unsure.
-
----
-
-## 📄 Features
-
-- 🔘 Press button to toggle active LED ON/OFF.
-- 🔁 If turned OFF, next LED in cycle becomes active.
-- 📺 LCD and Serial Monitor display LED name and state.
-- 🇵🇱 Custom LCD characters support Polish diacritics (Ż, ó, ł).
-
----
+💡 *Use an I2C scanner if unsure of your LCD address.*
 
 ## 📸 Screenshots
 
-Screenshots of the working project should be placed in the `screenshots/` folder.
+Coming soon!
 
-| LCD Display Example | Serial Monitor Output |
-|---------------------|------------------------|
-| ![LCD Screenshot](screenshots/lcd.png) | ![Serial Screenshot](screenshots/serial.png) |
+## 📄 Features
 
-> 📝 Replace with your actual screenshots.
-
----
+- Press the button to toggle the current LED ON/OFF.
+- If the LED is turned OFF, the program advances to the next LED in the cycle.
+- LCD and Serial Monitor display the current LED name and its status.
+- Custom Polish characters for `'Ż'`, `'ó'`, and `'ł'` are rendered correctly on the LCD.
 
 ## 🧾 Code Summary
 
@@ -125,41 +101,29 @@ void updateLEDs() {
 }
 ```
 
-🟡 When the yellow LED is active, the LCD uses three custom characters to display `"Żółta"` properly.
-
----
+🟡 *When the yellow LED is active, the LCD uses three custom characters to display `"Żółta"` properly.*
 
 ## ▶️ How to Run
 
 1. Open the **Arduino IDE**.
-2. Go to `Tools > Manage Libraries` and install **LiquidCrystal_I2C**.
+2. Install the `LiquidCrystal_I2C` library via **Library Manager**.
 3. Upload the sketch to your Arduino board.
-4. Open the **Serial Monitor** (9600 baud).
-5. Press the button to cycle through LED states and observe the LCD updates.
-
----
+4. Open **Serial Monitor** (`9600 baud`) and observe the LCD.
+5. Press the button to cycle through the LEDs.
 
 ## ✅ Project Highlights
 
-- ✅ Button-controlled LED toggling logic.
-- ✅ Polish diacritic support on I2C LCD.
-- ✅ LCD + Serial synchronization.
-- ✅ Clean hardware-software interaction.
-
----
+✅ Button-controlled LED cycling  
+✅ Custom LCD character creation  
+✅ LCD and Serial synchronization  
+✅ Polish diacritic support (`Ż`, `ó`, `ł`)
 
 ## 📃 License
 
-This project is licensed under the [MIT License](https://opensource.org/licenses/MIT).  
-See the `LICENSE` file for details.
+This project is open-source and available under the **MIT License**. See the `LICENSE` file for details.
 
----
+## 👨‍💻 Author
 
-## 👤 Author
+**Adrian Lesniak**
 
-**Adrian Lesniak**  
-Embedded Systems & Arduino Developer
-
----
-
-> 💡 A simple but elegant project showcasing multilingual display, state control, and interactive hardware behavior using Arduino.
+> 💡 Designed for projects where internationalization, hardware control, and user interaction matter most.
