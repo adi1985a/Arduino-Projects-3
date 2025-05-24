@@ -38,12 +38,12 @@ This project demonstrates:
 
 ### LEDs and Button
 
-| Arduino Pin | Connected To        |
-|-------------|---------------------|
-| D5          | Green LED (via resistor) |
-| D6          | Red LED (via resistor)   |
+| Arduino Pin | Connected To              |
+|-------------|---------------------------|
+| D5          | Green LED (via resistor)  |
+| D6          | Red LED (via resistor)    |
 | D9          | Yellow LED (via resistor) |
-| D7          | Push Button (with pull-up) |
+| D7          | Push Button (with pull-up)|
 
 ### I2C LCD (Default Address: `0x27`)
 
@@ -64,6 +64,18 @@ This project demonstrates:
 - 🔁 If turned OFF, next LED in cycle becomes active.
 - 📺 LCD and Serial Monitor display LED name and state.
 - 🇵🇱 Custom LCD characters support Polish diacritics (Ż, ó, ł).
+
+---
+
+## 📸 Screenshots
+
+Screenshots of the working project should be placed in the `screenshots/` folder.
+
+| LCD Display Example | Serial Monitor Output |
+|---------------------|------------------------|
+| ![LCD Screenshot](screenshots/lcd.png) | ![Serial Screenshot](screenshots/serial.png) |
+
+> 📝 Replace with your actual screenshots.
 
 ---
 
