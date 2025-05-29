@@ -53,12 +53,12 @@ This project demonstrates:
 ## 📸 Screenshots
 
 <p align="center">
-  <img src="screenshots\1.jpg" width="300"/>
-  <img src="screenshots\2.jpg" width="300"/>
-  <img src="screenshots\3.jpg" width="300"/>
-  <img src="screenshots\4.jpg" width="300"/>
-  <img src="screenshots\5.jpg" width="300"/>
-  <img src="screenshots\6.jpg" width="300"/>
+  <img src="screenshots\1a.jpg" width="300"/>
+  <img src="screenshots\2a.jpg" width="300"/>
+  <img src="screenshots\3a.jpg" width="300"/>
+  <img src="screenshots\4a.jpg" width="300"/>
+  <img src="screenshots\5a.jpg" width="300"/>
+  <img src="screenshots\6a.jpg" width="300"/>
 </p>
 
 ## 📄 Features
