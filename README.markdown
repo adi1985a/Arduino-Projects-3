@@ -15,6 +15,8 @@ This project demonstrates:
 - Use of custom characters for Polish language support on the LCD.
 - Basic debounce handling to ensure reliable button presses.
 
+![Demo GIF](screenshots/1.gif)
+
 ## 🛠 Components Required
 
 | Component             | Quantity |
@@ -50,7 +52,14 @@ This project demonstrates:
 
 ## 📸 Screenshots
 
-Coming soon!
+<p align="center">
+  <img src="screenshots\1.jpg" width="300"/>
+  <img src="screenshots\2.jpg" width="300"/>
+  <img src="screenshots\3.jpg" width="300"/>
+  <img src="screenshots\4.jpg" width="300"/>
+  <img src="screenshots\5.jpg" width="300"/>
+  <img src="screenshots\6.jpg" width="300"/>
+</p>
 
 ## 📄 Features
 
